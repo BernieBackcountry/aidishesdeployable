@@ -1,0 +1,37 @@
+
+.ingredientform {
+  font-size: 16px;
+  text-align: center;
+  margin: 0px 10px 10px 0px;
+}
+
+.generatebtn, .addbutton {
+    background-color: black;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: black 4px;
+    margin: 10px auto;
+    display: block;
+    border: none;
+}
+
+.result {
+  font-size: 16px;
+  text-align: left;
+  width:  auto;
+  font-style: Georgia;
+  padding-left: 100px;
+}
+
+.format{
+  max-width: 200px;
+  text-align: center;
+  border: 1px black;
+  margin: auto;
+
+}
