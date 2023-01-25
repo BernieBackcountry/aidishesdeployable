@@ -20,18 +20,40 @@
     border: none;
 }
 
-.result {
+.title {
+  font-size: 60px;
+  text-align: left;
+  width:  auto;
+  font-style: Georgia;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-weight: bold;
+}
+.ingredients {
   font-size: 16px;
   text-align: left;
   width:  auto;
   font-style: Georgia;
   padding-left: 100px;
+  padding-right: 100px;
+  
 }
-
+.instructions {
+  font-size: 16px;
+  text-align: left;
+  width:  auto;
+  font-style: Georgia;
+  padding-left: 100px;
+  padding-right: 100px;
+}
 .format{
   max-width: 200px;
   text-align: center;
   border: 1px black;
   margin: auto;
 
+}
+.image{
+  padding-left: 100px;
+  border-radius: 8px;
 }
