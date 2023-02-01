@@ -24,7 +24,7 @@ export default async function (req, res) {
       prompt: generatePrompt(food),
       model: "text-curie-001",
       temperature: 0.5,
-      max_tokens: 50,
+      max_tokens: 10,
       top_p: 1,
       frequency_penalty: 1,
       presence_penalty: 1

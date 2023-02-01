@@ -1,11 +1,31 @@
 
 .ingredientform {
   font-size: 16px;
+  margin: 10px 10px;
   text-align: center;
-  margin: 0px 10px 10px 0px;
-}
+  display: grid;
 
-.generatebtn, .addbutton {
+}
+.generatebtn:hover, .addbtn:hover, .deletebtn:hover {
+  background-color: green;
+  color: white;
+  transform: scale(1.1);
+}
+.deletebtn{
+  background-color: black;
+    color:white;
+    padding: 15px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: black 4px;
+    margin: 10px auto;
+    display: block;
+    border: none;
+}
+.generatebtn, .addbtn {
     background-color: black;
     color:white;
     padding: 15px 32px;
@@ -18,6 +38,15 @@
     margin: 10px auto;
     display: block;
     border: none;
+}
+
+.container {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.input {
+  flex: 1;
 }
 
 .title {
@@ -56,4 +85,13 @@
 .image{
   padding-left: 100px;
   border-radius: 8px;
+  display: inline-block;
+}
+.loading{
+  padding: auto;
+  border-radius: 8x;
+  size: 25%;
+  margin: 10px auto;
+  display: flex;
+
 }

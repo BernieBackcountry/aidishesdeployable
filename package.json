@@ -1,5 +1,5 @@
 {
-  "name": "openai-quickstart-node",
+  "name": "aidishes",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,13 +8,23 @@
     "start": "next start"
   },
   "dependencies": {
+    "browserfy": "^1.0.0",
+    "browserify": "^17.0.0",
+    "doc": "^0.0.3",
+    "file-saver": "^2.0.5",
+    "file-system": "^1.2.2",
+    "fs": "^0.0.1-security",
     "html-parser": "^0.11.0",
     "jquery": "^3.6.3",
+    "jspdf": "^2.5.1",
+    "loading": "^1.13.3",
     "next": "^13.1.1",
     "node-fetch": "^3.3.0",
     "openai": "^3.1.0",
+    "puppeteer": "^19.6.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-loader-spinner": "^5.3.4"
   },
   "engines": {
     "node": ">=14.6.0"
