@@ -61,6 +61,7 @@ export default function Home() {
   };
 
   return (
+    <html className={styles.page}>
     <div >
       <form id="ingredientsForm" onSubmit={onSubmit} className={styles.ingredientform}>
         <div className={styles.format}>
@@ -107,5 +108,6 @@ export default function Home() {
       }
       </div>
     </div>
+    </html>
   );
 }
