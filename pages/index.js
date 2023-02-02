@@ -62,6 +62,8 @@ export default function Home() {
 
   return (
     <html className={styles.page}>
+      <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1482013293005685"
+     crossorigin="anonymous"></script></head>
     <div >
       <form id="ingredientsForm" onSubmit={onSubmit} className={styles.ingredientform}>
         <div className={styles.format}>
