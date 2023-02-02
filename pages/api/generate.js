@@ -22,7 +22,7 @@ export default async function (req, res) {
     // Generate recipe title
     const titleCompletion = await openaiApi.createCompletion({
       prompt: generatePrompt(food),
-      model: "text-curie-001",
+      model: "text-davinci-003",
       temperature: 0.5,
       max_tokens: 10,
       top_p: 1,
@@ -32,8 +32,8 @@ export default async function (req, res) {
 
     // Generate ingredients
     const ingredientCompletion = await openaiApi.createCompletion({
-      prompt: "Give me just the ingredients for the recipe " + titleCompletion.data.choices[0].text + " in plain text",
-      model: "text-curie-001",
+      prompt: "Give me just the ingredients for the recipe " + titleCompletion.data.choices[0].text + " in plain text , and print the word ingredients",
+      model: "text-davinci-003",
       temperature: 0.5,
       max_tokens: 1000,
       top_p: 1,
@@ -43,8 +43,8 @@ export default async function (req, res) {
 
     // Generate instructions
     const instructionCompletion = await openaiApi.createCompletion({
-      prompt: "Give me just the instructions for the recipe " + titleCompletion.data.choices[0].text + " in plain text",
-      model: "text-curie-001",
+      prompt: "Give me just the instructions for the recipe " + titleCompletion.data.choices[0].text + " in plain text, and print the word instructions",
+      model: "text-davinci-003",
       temperature: 0.5,
       max_tokens: 1000,
       top_p: 1,
@@ -71,8 +71,8 @@ export default async function (req, res) {
 
       res.status(200).json({
         titleWords: titleCompletion.data.choices[0].text,
-        ingredientWords: "Ingredients: " +  ingredientCompletion.data.choices[0].text,
-        instructionWords: "Instructions: " + instructionCompletion.data.choices[0].text,
+        ingredientWords: ingredientCompletion.data.choices[0].text,
+        instructionWords: instructionCompletion.data.choices[0].text,
         imageUrl: imageUrl
       });
     }

@@ -1,9 +1,9 @@
 .page {
-  background-color: bisque;
+  background-color: rgb(251, 238, 230 );
 }
 
 .ingredientform {
-  font-size: 16px;
+  font-size: 100%;
   margin: 10px auto;
   text-align: center;
   display: grid;
@@ -13,7 +13,7 @@
 .generatebtn:hover,
 .addbtn:hover,
 .deletebtn:hover {
-  background-color: green;
+  background-color: rgb(231, 76, 60);
   color: white;
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
@@ -22,18 +22,19 @@
 .deletebtn,
 .generatebtn,
 .addbtn {
-  background-color: black;
+  background-color: rgb(135, 54, 0 );;
   color: white;
-  padding: 15px 32px;
+  padding:20px;
   text-align: center;
-  text-decoration: none;
+  text-decoration:underline;
   display: inline-block;
-  font-size: 16px;
+  font-size: 100%;
   cursor: pointer;
   border-radius: 8px;
-  margin: 10px auto;
+  margin: 1% 4%;
   border: none;
   transition: all 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 .container {
@@ -41,9 +42,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.input {
-  flex: -10;
-}
 
 .title {
   font-size:150%;
@@ -51,6 +49,7 @@
   font-style: Georgia;
   padding: auto;
   font-weight: bold;
+  padding: 0.5% 15%;
 }
 
 .ingredients,
@@ -58,33 +57,41 @@
   font-size: 100%;
   text-align: left;
   font-style: Georgia;
-  padding: 5% 5%;
+  padding: 0.5% 15%;
 }
 
 .format {
   max-width: 200px;
   text-align: center;
-  border: 1px black;
+  border: 1px #D98880;
   margin: auto;
 }
 
 .image {
-  padding: 5% 5%;
   border-radius: 8px;
   width: auto;
   height: auto;
-  float: top;
+  display: inline-block;
+  padding: 0.5% 15%;
 }
 
 .loading {
   padding: auto;
   border-radius: 8px;
-  width: 60%;
+  width: 10%;
   height: auto;
   margin: 10px auto;
   display: flex;
 }
-.container {
+.container{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  
+}
+.containerfood {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-color: black;
+  border: 10px solid; 
+  width: 50%;
 }

@@ -10,11 +10,13 @@ export default function Home() {
   const [ingredients, setIngredients] = useState([{ id: 1, value: "" }]);
   const [isLoading, setIsLoading] = useState(false);
   const [showImage, setShowImage] = useState(false);
+  const [showBorder, setShowBorder] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setShowImage(true);
     setIsLoading(true);
+    setShowBorder(true)
     try {
       const response = await fetch("/api/generate", {
         method: "POST",
@@ -63,53 +65,53 @@ export default function Home() {
   return (
     <html className={styles.page}>
       <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1482013293005685"
-     crossorigin="anonymous"></script></head>
-    <div >
-      <form id="ingredientsForm" onSubmit={onSubmit} className={styles.ingredientform}>
-        <div className={styles.format}>
-          {ingredients
-            .filter((ingredient) => ingredient.value != null)
-            .map((ingredient) => (
-              <div key={ingredient.id} className={styles.container}>
-                <input
-                  type="text"
-                  placeholder="Enter an Ingredient"
-                  defaultValue={ingredient.value}
-                  onChange={(e) => onChange(e, ingredient.id)}
-                  className={styles.ingredientform}
-                />
+        crossorigin="anonymous"></script></head>
+      <div >
+        <form id="ingredientsForm" onSubmit={onSubmit} className={styles.ingredientform}>
+          <div className={styles.format}>
+            {ingredients
+              .filter((ingredient) => ingredient.value != null)
+              .map((ingredient) => (
+                <div key={ingredient.id} className={styles.container}>
+                  <input
+                    type="text"
+                    placeholder="Enter an Ingredient"
+                    defaultValue={ingredient.value}
+                    onChange={(e) => onChange(e, ingredient.id)}
+                    className={styles.ingredientform}
+                  />
 
-                <button type="button" className={styles.deletebtn} onClick={() => deleteRow(ingredient.id)}>
-                  Remove</button>
+                  <button type="button" className={styles.deletebtn} onClick={() => deleteRow(ingredient.id)}>
+                    Remove</button>
+                </div>
+              ))}
+          </div>
+          <div>
+            <button type="button" onClick={addRow} className={styles.addbtn}>
+              Add Ingredient
+            </button>
+            <br />
+            <input type="submit" value="Generate Recipes" className={styles.generatebtn} />
+          </div>
+        </form>
+        <div> {
+          isLoading ? <img src="https://media.tenor.com/PB91j4e7Q6oAAAAj/pizza-food.gif" className={styles.loading} /> :
+              <div classname={styles.container} style={showBorder ? { border: '20px solid #D98880' } : {}}>
+                <div id="title" className={styles.title}>{titleWords}</div>
+                <br />
+                <br />
+
+                <div id="ingredients" className={styles.ingredients}>{ingredientWords}</div>
+                <br />
+                <br />
+
+                <div id="instructions" className={styles.instructions}>{instructionWords}</div>
+
+                {showImage ? <img src={imageUrl} alt="Recipe Image" className={styles.image} /> : null}
+
               </div>
-            ))}
-        </div>
-        <div>
-          <button type="button" onClick={addRow} className={styles.addbtn}>
-            Add Ingredient
-          </button>
-          <br />
-          <input type="submit" value="Generate Recipes" className={styles.generatebtn} />
-        </div>
-      </form>
-      <div> { 
-      isLoading ? <img src="https://media.tenor.com/JwPW0tw69vAAAAAi/cargando-loading.gif" className={styles.loading} /> :
-        <div>
-          <div id="title" className={styles.title}>{titleWords}</div>
-          <br />
-          <br />
-          
-          <div id="ingredients" className={styles.ingredients}>{ingredientWords}</div>
-          <br />
-          <br />
-          
-          <div id="instructions" className={styles.instructions}>{instructionWords}</div>
-      
-            {showImage ? <img src={imageUrl} alt="Recipe Image" className={styles.image} /> : null}
-        
-        </div>
       }
-      </div>
+            </div>
     </div>
     </html>
   );
