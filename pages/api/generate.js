@@ -71,8 +71,8 @@ export default async function (req, res) {
 
       res.status(200).json({
         titleWords: titleCompletion.data.choices[0].text,
-        ingredientWords: ingredientCompletion.data.choices[0].text,
-        instructionWords: instructionCompletion.data.choices[0].text,
+        ingredientWords: "Ingredients: " +  ingredientCompletion.data.choices[0].text,
+        instructionWords: "Instructions: " + instructionCompletion.data.choices[0].text,
         imageUrl: imageUrl
       });
     }

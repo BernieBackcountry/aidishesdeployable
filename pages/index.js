@@ -96,11 +96,11 @@ export default function Home() {
           <div id="title" className={styles.title}>{titleWords}</div>
           <br />
           <br />
-          Ingredients:
+          
           <div id="ingredients" className={styles.ingredients}>{ingredientWords}</div>
           <br />
           <br />
-          instructions:
+          
           <div id="instructions" className={styles.instructions}>{instructionWords}</div>
       
             {showImage ? <img src={imageUrl} alt="Recipe Image" className={styles.image} /> : null}
