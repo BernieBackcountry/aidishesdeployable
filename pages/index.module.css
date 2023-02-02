@@ -84,3 +84,7 @@
   margin: 10px auto;
   display: flex;
 }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
