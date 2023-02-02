@@ -90,7 +90,8 @@ export default function Home() {
           <input type="submit" value="Generate Recipes" className={styles.generatebtn} />
         </div>
       </form>
-      <div> { isLoading ? <img src="https://media.tenor.com/JwPW0tw69vAAAAAi/cargando-loading.gif" className={styles.loading} /> :
+      <div> { 
+      isLoading ? <img src="https://media.tenor.com/JwPW0tw69vAAAAAi/cargando-loading.gif" className={styles.loading} /> :
         <div>
           <div id="title" className={styles.title}>{titleWords}</div>
           <br />
