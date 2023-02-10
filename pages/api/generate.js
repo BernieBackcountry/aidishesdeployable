@@ -59,7 +59,7 @@ export default async function (req, res) {
       prompt: generatePrompt(food),
       model: "text-davinci-003",
       temperature: 0.5,
-      max_tokens: 10,
+      max_tokens: 50,
       top_p: 1,
       frequency_penalty: 1,
       presence_penalty: 1
