@@ -1,3 +1,8 @@
+/* styles for laptops */
+@media only screen and (min-width: 1024px) {
+  /* your laptop-specific styles here */
+
+
 .page {
     background-color: white;
   }
@@ -48,10 +53,9 @@
   .deletebtn {
     background-color: #873600;
     color: #fff;
-    padding: 20px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: underline;
-    display: inline-block;
     font-size: 100%;
     cursor: pointer;
     border-radius: 8px;
@@ -102,19 +106,114 @@
     margin: 10px auto;
     display: flex;
   }
-  .homepage{
-    padding: auto;
-    border-radius: 8px;
-    width: 20%;
-    height: auto;
-    margin: auto auto;
+}
+
+
+  /* styles for iPhones */
+@media only screen and (max-width: 400px) {
+  /* your iPhone-specific styles here */
+  .page {
+    background-color: white;
+  }
+  
+  .container {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .title {
+    font-size: 150%;
+    font-style: Georgia;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    padding: 0.5% 15%;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 50px;
     text-align: center;
   }
-  .topbar{
+  
+  .button {
+    background-color: #ffb6c1;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 50px;
+    display: inline-block;
+  }
+  
+  .ingredientform {
+    font-size: 100%;
+    margin: 10px auto;
+    text-align: center;
+    display: grid;
+    border-radius: 8px;
+  }
+  
+  .generatebtn,
+  .addbtn,
+  .deletebtn {
+    background-color: #873600;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 1% 4%;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .generatebtn:hover,
+  .addbtn:hover,
+  .deletebtn:hover {
+    background-color: #E74C3C;
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .ingredients,
+  .instructions,
+  .nutrition {
+    font-size: 100%;
+    text-align: left;
+    font-style: Georgia;
+    padding: 0.5% 15%;
+  }
+  
+  .format {
+    max-width: 200px;
+    text-align: center;
+    border: 1px #D98880;
+    margin: auto;
+  }
+  
+  .image {
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 0.5% 15%;
+  }
+  
+  .loading {
     padding: auto;
     border-radius: 8px;
-    width: 20%;
+    width: 15%;
     height: auto;
-    margin: auto auto;
-    text-align: center;
+    margin: 10px auto;
+    display: flex;
   }
+}
+
