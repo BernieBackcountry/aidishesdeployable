@@ -1,97 +1,120 @@
 .page {
-  background-color: rgb(251, 238, 230 );
-}
-
-.ingredientform {
-  font-size: 100%;
-  margin: 10px auto;
-  text-align: center;
-  display: grid;
-  border-radius: 8px;
-}
-
-.generatebtn:hover,
-.addbtn:hover,
-.deletebtn:hover {
-  background-color: rgb(231, 76, 60);
-  color: white;
-  transform: scale(1.1);
-  transition: all 0.3s ease-in-out;
-}
-
-.deletebtn,
-.generatebtn,
-.addbtn {
-  background-color: rgb(135, 54, 0 );;
-  color: white;
-  padding:20px;
-  text-align: center;
-  text-decoration:underline;
-  display: inline-block;
-  font-size: 100%;
-  cursor: pointer;
-  border-radius: 8px;
-  margin: 1% 4%;
-  border: none;
-  transition: all 0.3s ease-in-out;
-  font-weight: bold;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-
-.title {
-  font-size:150%;
-  text-align: left;
-  font-style: Georgia;
-  padding: auto;
-  font-weight: bold;
-  padding: 0.5% 15%;
-}
-
-.ingredients,
-.instructions {
-  font-size: 100%;
-  text-align: left;
-  font-style: Georgia;
-  padding: 0.5% 15%;
-}
-
-.format {
-  max-width: 200px;
-  text-align: center;
-  border: 1px #D98880;
-  margin: auto;
-}
-
-.image {
-  border-radius: 8px;
-  width: auto;
-  height: auto;
-  display: inline-block;
-  padding: 0.5% 15%;
-}
-
-.loading {
-  padding: auto;
-  border-radius: 8px;
-  width: 10%;
-  height: auto;
-  margin: 10px auto;
-  display: flex;
-}
-.container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    background-color: white;
+  }
   
-}
-.containerfood {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-color: black;
-  border: 10px solid; 
-  width: 50%;
-}
+  .container {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .title {
+    font-size: 150%;
+    font-style: Georgia;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    padding: 0.5% 15%;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .button {
+    background-color: #ffb6c1;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 50px;
+    display: inline-block;
+  }
+  
+  .ingredientform {
+    font-size: 100%;
+    margin: 10px auto;
+    text-align: center;
+    display: grid;
+    border-radius: 8px;
+  }
+  
+  .generatebtn,
+  .addbtn,
+  .deletebtn {
+    background-color: #873600;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 1% 4%;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .generatebtn:hover,
+  .addbtn:hover,
+  .deletebtn:hover {
+    background-color: #E74C3C;
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .ingredients,
+  .instructions,
+  .nutrition {
+    font-size: 100%;
+    text-align: left;
+    font-style: Georgia;
+    padding: 0.5% 15%;
+  }
+  
+  .format {
+    max-width: 200px;
+    text-align: center;
+    border: 1px #D98880;
+    margin: auto;
+  }
+  
+  .image {
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    padding: 0.5% 15%;
+  }
+  
+  .loading {
+    padding: auto;
+    border-radius: 8px;
+    width: 15%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+  }
+  .homepage{
+    padding: auto;
+    border-radius: 8px;
+    width: 20%;
+    height: auto;
+    margin: auto auto;
+    text-align: center;
+  }
+  .topbar{
+    padding: auto;
+    border-radius: 8px;
+    width: 20%;
+    height: auto;
+    margin: auto auto;
+    text-align: center;
+  }

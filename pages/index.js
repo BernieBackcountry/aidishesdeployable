@@ -1,11 +1,13 @@
 import { useState } from "react";
 import styles from "./index.module.css";
 
+
 export default function Home() {
   const [foodInput, setfoodInput] = useState("");
   const [titleWords, setTitleWords] = useState();
   const [ingredientWords, setIngredientWords] = useState();
   const [instructionWords, setInstructionWords] = useState();
+  const [nutritionWords, setNutritionWords] = useState();
   const [imageUrl, setImageUrl] = useState();
   const [ingredients, setIngredients] = useState([{ id: 1, value: "" }]);
   const [isLoading, setIsLoading] = useState(false);
@@ -34,8 +36,9 @@ export default function Home() {
       setTitleWords(data.titleWords);
       setIngredientWords(data.ingredientWords)
       setInstructionWords(data.instructionWords)
+      setNutritionWords(data.nutritionWords)
       setImageUrl(data.imageUrl);
-      setfoodInput("");
+      
 
     } catch (error) {
       console.error(error);
@@ -65,7 +68,7 @@ export default function Home() {
   return (
     <html className={styles.page}>
       <head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1482013293005685"
-        crossorigin="anonymous"></script></head>
+     crossorigin="anonymous"></script></head>
       <div >
         <form id="ingredientsForm" onSubmit={onSubmit} className={styles.ingredientform}>
           <div className={styles.format}>
@@ -107,6 +110,14 @@ export default function Home() {
 
                 <div id="instructions" className={styles.instructions}>{instructionWords}</div>
 
+                <br />
+                <br />
+
+                <div id="nutrition" className={styles.nutrition}>{nutritionWords}</div>
+
+                <br />
+                <br />
+
                 {showImage ? <img src={imageUrl} alt="Recipe Image" className={styles.image} /> : null}
 
               </div>
@@ -116,3 +127,4 @@ export default function Home() {
     </html>
   );
 }
+
