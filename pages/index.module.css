@@ -3,16 +3,16 @@
   /* your laptop-specific styles here */
 
 
-.page {
+  .page {
     background-color: white;
   }
-  
+
   .container {
     font-family: Arial, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .title {
     font-size: 150%;
     font-style: Georgia;
@@ -21,14 +21,14 @@
     text-align: left;
     padding: 0.5% 15%;
   }
-  
+
   .description {
     font-size: 18px;
     color: #333;
     margin-bottom: 50px;
     text-align: center;
   }
-  
+
   .button {
     background-color: #ffb6c1;
     color: #fff;
@@ -39,7 +39,7 @@
     margin-top: 50px;
     display: inline-block;
   }
-  
+
   .ingredientform {
     font-size: 100%;
     margin: 10px auto;
@@ -47,7 +47,7 @@
     display: grid;
     border-radius: 8px;
   }
-  
+
   .generatebtn,
   .addbtn,
   .deletebtn {
@@ -64,7 +64,7 @@
     font-weight: bold;
     transition: all 0.3s ease-in-out;
   }
-  
+
   .generatebtn:hover,
   .addbtn:hover,
   .deletebtn:hover {
@@ -73,7 +73,7 @@
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
   }
-  
+
   .ingredients,
   .instructions,
   .nutrition {
@@ -82,14 +82,14 @@
     font-style: Georgia;
     padding: 0.5% 15%;
   }
-  
+
   .format {
     max-width: 200px;
     text-align: center;
     border: 1px #D98880;
     margin: auto;
   }
-  
+
   .image {
     border-radius: 8px;
     width: auto;
@@ -97,7 +97,7 @@
     display: inline-block;
     padding: 0.5% 15%;
   }
-  
+
   .loading {
     padding: auto;
     border-radius: 8px;
@@ -106,22 +106,44 @@
     margin: 10px auto;
     display: flex;
   }
+  .amazonbtn {
+    background-color: #873600;
+    color: #fff;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 80%;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 1% 4%;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .amazonbtn:hover{
+    background-color: #E74C3C;
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 
-  /* styles for iPhones */
+/* styles for iPhones */
 @media only screen and (max-width: 400px) {
+
   /* your iPhone-specific styles here */
   .page {
     background-color: white;
   }
-  
+
   .container {
     font-family: Arial, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .title {
     font-size: 150%;
     font-style: Georgia;
@@ -130,14 +152,14 @@
     text-align: left;
     padding: 0.5% 15%;
   }
-  
+
   .description {
     font-size: 18px;
     color: #333;
     margin-bottom: 50px;
     text-align: center;
   }
-  
+
   .button {
     background-color: #ffb6c1;
     color: #fff;
@@ -148,7 +170,7 @@
     margin-top: 50px;
     display: inline-block;
   }
-  
+
   .ingredientform {
     font-size: 100%;
     margin: 10px auto;
@@ -156,7 +178,7 @@
     display: grid;
     border-radius: 8px;
   }
-  
+
   .generatebtn,
   .addbtn,
   .deletebtn {
@@ -173,7 +195,7 @@
     font-weight: bold;
     transition: all 0.3s ease-in-out;
   }
-  
+
   .generatebtn:hover,
   .addbtn:hover,
   .deletebtn:hover {
@@ -182,7 +204,7 @@
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
   }
-  
+
   .ingredients,
   .instructions,
   .nutrition {
@@ -191,14 +213,14 @@
     font-style: Georgia;
     padding: 0.5% 15%;
   }
-  
+
   .format {
     max-width: 200px;
     text-align: center;
     border: 1px #D98880;
     margin: auto;
   }
-  
+
   .image {
     border-radius: 8px;
     width: auto;
@@ -206,7 +228,7 @@
     display: inline-block;
     padding: 0.5% 15%;
   }
-  
+
   .loading {
     padding: auto;
     border-radius: 8px;
@@ -215,5 +237,6 @@
     margin: 10px auto;
     display: flex;
   }
-}
 
+
+}

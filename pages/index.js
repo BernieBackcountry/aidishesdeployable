@@ -102,7 +102,7 @@ export default function Home() {
           <br />
           <div>
             <a target="_blank"
-              className={styles.generatebtn}
+              className={styles.amazonbtn}
               href="https://www.amazon.com/alm/storefront?almBrandId=QW1hem9uIEZyZXNo&amp;tag=googhydr-20&amp;hvadid=439740365166&amp;hvpos=&amp;hvexid=&amp;hvnetw=g&amp;hvrand=3841882910299123143&amp;hvpone=&amp;hvptwo=&amp;hvqmt=e&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=9029027&amp;hvtargid=kwd-11554712357&amp;ref=pd_sl_7cf2rld4ut_e&_encoding=UTF8&tag=aidishes-20&linkCode=ur2&linkId=8da7828e5eb0765ec90e642fc07d6938&camp=1789&creative=9325">
               ORDER MISSING INGREDIENTS ON AMAZON</a>
           </div>
