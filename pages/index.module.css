@@ -238,5 +238,27 @@
     display: flex;
   }
 
+  .amazonbtn {
+    background-color: #873600;
+    color: #fff;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 80%;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 1% 4%;
+    border: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .amazonbtn:hover{
+    background-color: #E74C3C;
+    color: #fff;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+
 
 }
